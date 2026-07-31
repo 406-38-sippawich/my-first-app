@@ -1,4 +1,4 @@
-import to streamlit as st
+import streamlit as st
 wasd
 wasd
 wasd
