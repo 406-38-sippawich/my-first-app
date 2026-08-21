@@ -108,7 +108,7 @@ ans3 = st.text_input(
     value=st.session_state.ans3_val,
 )
 ans4 = st.text_input(
-    "ข้อ 4: 'w_t__m_lon' is full of water!. 🍉",
+    "ข้อ 4: `w_t__m_lon` is a fruit full of water!. 🍉",
     value=st.session_state.ans4_val,
 )
 
