@@ -1,3 +1,5 @@
 import streamlit as st
 
 st.markdown("# :green[💪 Doung Café 🏋️]")
+st.write("ยินดีต้อนรับเข้าสู่ Doung Café กรุณาเลือกสินค้าของคุณ")
+st.write("Welcome to Doung Café Please select your order")
