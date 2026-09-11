@@ -7,5 +7,8 @@ Espresso_count = st.number_input('Espresso เอสเพรสโซ (แก�
 Americano_count = st.number_input('Americano อเมริกาโน (แก้ว)' ,value = 0)
 Latte_count = st.number_input('Latte ลาเต้ (แก้ว)' ,value = 0)
 Cappuccino_count = st.number_input('Cappuccino คาปูชิโน (แก้ว)' ,value = 0)
-#Espresso_count = st.number_input('Espresso เอสเพรสโซ (แก้ว)' ,value = 0)
-#Espresso_count = st.number_input('Espresso เอสเพรสโซ (แก้ว)' ,value = 0)
+Mocha_count = st.number_input('Mocha มอคค่า (แก้ว)' ,value = 0)
+IcedCoffee_count = st.number_input('Iced Coffee กาแฟเย็น (แก้ว)' ,value = 0)
+count_sum = IcedCoffee_count + Mocha_count + Cappuccino_count + Latte_count + Americano_count + Espresso_count
+st.write(f'จำนวนสินค้า {count_sum}')
+#st.write("Welcome to :green[Doung Café] Please select your order")
