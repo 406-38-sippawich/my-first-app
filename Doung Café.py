@@ -35,7 +35,6 @@ st.divider()
 discount_sum = 1
 membership = st.text_input("Do you have a membership? คุณได้สมัครสามาชิกไหม? (Normal/Gold/Platinum(ไม่มีให้เว้นว่าง))" , value= " " , )
 l_membership = membership.strip().lower()
-st.write(f'{l_membership}')
 if membership == 'Normal' :
   discount_sum -= 0.05
 elif membership == 'Gold' :
@@ -43,3 +42,5 @@ elif membership == 'Gold' :
 elif membership == 'Platinum' :
   discount_sum -= 0.15
 student = st.text_input("Are you a student? คุณเป็นนักศึกษาใช่ไหม?(Yes/No)" , value= "No" , )
+l_student = student.strip().lower()
+st.write(f'{l_student}')
