@@ -30,6 +30,6 @@ elif Cheesecake_count < 0:
   st.error(':red[Error จำนวนสินค้าไม่สามารถติดลบได้]')
 else:
   st.write(f'จำนวนสินค้า {count_sum} ชิ้น')
+st.divider()
 membership = st.text_input("Do you have a membership? คุณได้สมัครสามาชิกไหม? (Normal/Gold/Platinum(ไม่มีให้เว้นว่าง))" , value= " " , )
-st.write(f'{membership}')
 
