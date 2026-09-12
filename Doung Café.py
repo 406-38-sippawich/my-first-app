@@ -32,6 +32,15 @@ else:
   st.write(f'จำนวนสินค้า {count_sum} ชิ้น')
 st.write('ซื้อครบ 300 บาทลด 10%!!!')
 st.divider()
+discount_sum = 1 :
 membership = st.text_input("Do you have a membership? คุณได้สมัครสามาชิกไหม? (Normal/Gold/Platinum(ไม่มีให้เว้นว่าง))" , value= " " , )
+l_membership = membership.strip().lower()
+st.write(f'{l_membership}')
+if membership == 'Normal' :
+  discount_sum -= 0.05
+elif membership == 'Gold' :
+  discount_sum -= 0.10
+elif membership == 'Platinum' :
+  discount_sum -= 0.15
 student = st.text_input("Are you a student? คุณเป็นนักศึกษาใช่ไหม?(Yes/No)" , value= "No" , )
-
+if student
