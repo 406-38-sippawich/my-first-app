@@ -81,6 +81,6 @@ st.write(f':green[ราคาสินค้า {VAT_cost} บาท] :yellow[(
 money = st.number_input('กรุณาจ่ายเงิน' ,value = 0.00)
 change = money - VAT_cost
 if change < 0 :
-  st.write('red:[คุณมีเงินไม่เพียงพอ]')
+  st.write(':red[คุณมีเงินไม่เพียงพอ]')
 else:
   st.write(f':green[เงินทอน {change} บาท]')
