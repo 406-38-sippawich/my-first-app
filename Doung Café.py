@@ -83,4 +83,4 @@ change = money - VAT_cost
 if change < 0 :
   st.write('❌💵:red[คุณมีเงินไม่เพียงพอ]')
 else:
-  st.write(f'💸:green[เงินทอน {change} บาท]')
+  st.write(f'💸เงินทอน green:[{change}] บาท')
