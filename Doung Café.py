@@ -29,7 +29,7 @@ elif Croissant_count < 0:
 elif Cheesecake_count < 0:
   st.error(':red[Error จำนวนสินค้าไม่สามารถติดลบได้]')
 else:
-  st.write(f'☕🥐🍰จำนวนสินค้า :green[{count_sum}] ชิ้น')
+  st.write(f'🥐🍰จำนวนสินค้า :green[{count_sum}] ชิ้น')
 Espresso_cost = 45 * Espresso_count
 Americano_cost = 45 * Americano_count
 Latte_cost = 50 * Latte_count
