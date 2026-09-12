@@ -29,7 +29,7 @@ elif Croissant_count < 0:
 elif Cheesecake_count < 0:
   st.error(':red[Error จำนวนสินค้าไม่สามารถติดลบได้]')
 else:
-  st.write(f'จำนวนสินค้า {count_sum} ชิ้น')
+  st.write(f'จำนวนสินค้า green:[{count_sum}] ชิ้น')
 Espresso_cost = 45 * Espresso_count
 Americano_cost = 45 * Americano_count
 Latte_cost = 50 * Latte_count
@@ -56,10 +56,12 @@ elif Croissant_count < 0:
 elif Cheesecake_count < 0:
   st.error(':red[Error ราคาสินค้าไม่สามารถติดลบได้]')
 else:
-  st.write(f'ราคาสินค้า {cost} (ยังไม่คิด VAT และ ลดราคา)')
-st.write('ซื้อครบ 300 บาทลด 10%!!!')
+  st.write(f':green[ราคาสินค้า {cost}] :yellow[(ยังไม่คิด VAT และ ลดราคา)]')
+st.write(':green[ซื้อครบ 300 บาทลด 10%!!!]')
 st.divider()
 discount_sum = 1
+if cost > 300:
+  discount_sum -= 10
 membership = st.text_input("Do you have a membership? คุณได้สมัครสามาชิกไหม? (Normal/Gold/Platinum(ไม่มีให้เว้นว่าง))" , value= " " , )
 l_membership = membership.strip().lower()
 if l_membership == 'normal' :
