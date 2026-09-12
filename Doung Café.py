@@ -30,6 +30,33 @@ elif Cheesecake_count < 0:
   st.error(':red[Error จำนวนสินค้าไม่สามารถติดลบได้]')
 else:
   st.write(f'จำนวนสินค้า {count_sum} ชิ้น')
+Espresso_cost = 45 * Espersso_count
+Americano_cost = 45 * Americano_count
+Latte_cost = 50 * Latte_count
+Cappuccino_cost = 50 * Cappuccino_count
+Mocha_cost = 55 * Mocha_count
+IcedCoffee_cost = 60 * IcedCoffee_count
+Croissant_cost = 45 * Croissant_count
+Cheesecake_cost = 60 * Cheesecake_count
+cost = IcedCoffee_cost + Mocha_cost + Cappuccino_cost + Latte_cost + Americano_cost + Espresso_cost + Croissant_cost + Cheesecake_cost
+if Espresso_count < 0 :
+  st.error(':red[Error ราคาสินค้าไม่สามารถติดลบได้]')
+elif Americano_count < 0 :
+  st.error(':red[Error ราคาสินค้าไม่สามารถติดลบได้]')
+elif Latte_count < 0:
+  st.error(':red[Error ราคาสินค้าไม่สามารถติดลบได้]')
+elif Cappuccino_count < 0:
+  st.error(':red[Error ราคาสินค้าไม่สามารถติดลบได้]')
+elif Mocha_count < 0:
+  st.error(':red[Error ราคาสินค้าไม่สามารถติดลบได้]')
+elif IcedCoffee_count < 0:
+  st.error(':red[Error ราคาสินค้าไม่สามารถติดลบได้]')
+elif Croissant_count < 0:
+  st.error(':red[Error ราคาสินค้าไม่สามารถติดลบได้]')
+elif Cheesecake_count < 0:
+  st.error(':red[Error ราคาสินค้าไม่สามารถติดลบได้]')
+else:
+  st.write(f'ราคาสินค้า {cost} (ยังไม่คิด VAT และ ลดราคา)')
 st.write('ซื้อครบ 300 บาทลด 10%!!!')
 st.divider()
 discount_sum = 1
@@ -45,4 +72,3 @@ student = st.text_input("Are you a student? คุณเป็นนักศึ
 l_student = student.strip().lower()
 if l_student == 'yes' :
   discount_sum -= 0.10
-st.write(f'{discount_sum}')
