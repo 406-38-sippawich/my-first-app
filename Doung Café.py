@@ -32,7 +32,7 @@ else:
   st.write(f'จำนวนสินค้า {count_sum} ชิ้น')
 st.write('ซื้อครบ 300 บาทลด 10%!!!')
 st.divider()
-discount_sum = 1 :
+discount_sum = 1
 membership = st.text_input("Do you have a membership? คุณได้สมัครสามาชิกไหม? (Normal/Gold/Platinum(ไม่มีให้เว้นว่าง))" , value= " " , )
 l_membership = membership.strip().lower()
 st.write(f'{l_membership}')
