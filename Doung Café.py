@@ -56,7 +56,7 @@ elif Croissant_count < 0:
 elif Cheesecake_count < 0:
   st.error(':red[Error ราคาสินค้าไม่สามารถติดลบได้]')
 else:
-  st.write(f':green[ราคาสินค้า {cost}] :yellow[(ยังไม่คิด VAT และ ลดราคา)]')
+  st.write(f':green[ราคาสินค้า {cost} บาท] :yellow[(ยังไม่คิด VAT และ ลดราคา)]')
 st.write(':green[ซื้อครบ 300 บาท ลด 10%!!!]')
 st.divider()
 discount_sum = 1
@@ -74,4 +74,13 @@ student = st.text_input("Are you a student? คุณเป็นนักศึ
 l_student = student.strip().lower()
 if l_student == 'yes' :
   discount_sum -= 0.10
-st.write(f'{discount_sum}')
+st.divider()
+dis_cost = cost * discount_sum
+VAT_cost = dis_cost * 1.07
+st.write(f':green[ราคาสินค้า {VAT_cost} บาท] :yellow[(คิด VAT และ ลดราคาแล้ว)]')
+money = st.number_input('กรุณาจ่ายเงิน' ,value = 0.00)
+change = money - VAT_cost
+if change < 0 :
+  st.write('red:[คุณมีเงินไม่เพียงพอ]')
+else:
+  st.write(f'green:[เงินทอน {change} บาท]')
