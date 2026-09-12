@@ -61,7 +61,7 @@ st.write(':green[ซื้อครบ 300 บาท ลด 10%!!!]')
 st.divider()
 discount_sum = 1
 if cost > 300:
-  discount_sum -= 10
+  discount_sum -= 0.10
 membership = st.text_input("Do you have a membership? คุณได้สมัครสามาชิกไหม? (Normal/Gold/Platinum(ไม่มีให้เว้นว่าง))" , value= " " , )
 l_membership = membership.strip().lower()
 if l_membership == 'normal' :
