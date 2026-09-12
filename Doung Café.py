@@ -57,7 +57,7 @@ elif Cheesecake_count < 0:
   st.error(':red[Error ราคาสินค้าไม่สามารถติดลบได้]')
 else:
   st.write(f':green[ราคาสินค้า {cost}] :yellow[(ยังไม่คิด VAT และ ลดราคา)]')
-st.write(':green[ซื้อครบ 300 บาทลด 10%!!!]')
+st.write(':green[ซื้อครบ 300 บาท ลด 10%!!!]')
 st.divider()
 discount_sum = 1
 if cost > 300:
@@ -74,3 +74,4 @@ student = st.text_input("Are you a student? คุณเป็นนักศึ
 l_student = student.strip().lower()
 if l_student == 'yes' :
   discount_sum -= 0.10
+st.write(f'{discount_sum}')
