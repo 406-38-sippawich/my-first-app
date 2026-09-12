@@ -43,4 +43,3 @@ elif membership == 'Gold' :
 elif membership == 'Platinum' :
   discount_sum -= 0.15
 student = st.text_input("Are you a student? คุณเป็นนักศึกษาใช่ไหม?(Yes/No)" , value= "No" , )
-if student :
